@@ -22,6 +22,14 @@ def countdown(total_seconds, label="Time"):
     print(f"\n{label} complete!")
 
 if __name__ == "__main__":
-    # Set standard Pomodoro focus time (25 minutes = 1500 seconds)
-    POMODORO_SECONDS = 1500
-    countdown(POMODORO_SECONDS)
+    POMODORO_SECONDS = 1500  # 25 minutes
+    BREAK_SECONDS = 300      # 5 minutes
+    
+    clear_screen()
+    countdown(POMODORO_SECONDS, label="Focus Time")
+    
+    print("\nStarting break in 3 seconds...")
+    time.sleep(3)
+    
+    clear_screen()
+    countdown(BREAK_SECONDS, label="Break Time")
