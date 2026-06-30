@@ -1,5 +1,10 @@
 import time
 import sys
+import os
+
+def clear_screen():
+    """Clears the terminal screen."""
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def countdown(total_seconds):
     """A simple countdown timer that updates in the terminal."""
