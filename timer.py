@@ -21,5 +21,6 @@ def countdown(total_seconds):
     print("\nTime's up! Great job.")
 
 if __name__ == "__main__":
-    # Test the timer with a quick 10-second run
-    countdown(10)
+    # Set standard Pomodoro focus time (25 minutes = 1500 seconds)
+    POMODORO_SECONDS = 1500
+    countdown(POMODORO_SECONDS)
